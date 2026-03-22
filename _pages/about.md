@@ -75,7 +75,7 @@ Hello! 🤗 I'm a M.S. student at [MICV Lab](https://micv.yonsei.ac.kr/home) (Pr
 
 <h2 id="projects">Projects</h2>
 
-- Add your projects here.
+- coming soon.
 
 <h2 id="awards-honors">Awards &amp; Honors</h2>
 
