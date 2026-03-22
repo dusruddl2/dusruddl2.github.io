@@ -49,7 +49,7 @@ Hello! 🤗 I'm a M.S. student at [MICV Lab](https://micv.yonsei.ac.kr/home) (Pr
   </div>
 
   <div class="timeline-item">
-    <div class="timeline-year">2024.01-2025.03</div>
+    <div class="timeline-year">2024.01-2024.03</div>
     <div class="timeline-content">
       <h4>Korea University</h4>
       <p>Undergraduate Research Assistant, Vision & AI Lab (Advisor: Jinkyu Kim)</p>
