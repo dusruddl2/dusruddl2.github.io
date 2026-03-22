@@ -55,6 +55,12 @@
     margin-top: 1em;
     border-bottom: none;
   }
+
+  .publication-card .archive__item-title {
+    margin-top: 0;
+    margin-bottom: 0.15em;
+    border-bottom: none;
+  }
 }
 
 .archive__item-excerpt {
@@ -81,6 +87,15 @@
 
   .archive__item-title {
     text-decoration: underline;
+  }
+}
+
+.archive__item.publication-card:hover {
+  .archive__item-teaser {
+    box-shadow: none;
+  }
+  .archive__item-title {
+    text-decoration: none;
   }
 }
 

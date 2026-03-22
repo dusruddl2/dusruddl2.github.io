@@ -41,3 +41,293 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+/* ==========================================================================
+   CUSTOM STYLES
+   ========================================================================== */
+
+/* Latest News Section */
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: baseline;
+  padding: 0.6em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.news-date {
+  flex-shrink: 0;
+  width: 100px;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  font-size: 0.9em;
+}
+
+.news-content {
+  flex: 1;
+  font-size: 0.95em;
+}
+
+/* Research Experience Section */
+.experience-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Timeline style (for Research Experience) */
+.timeline {
+  position: relative;
+  margin: 0.4rem 0 0;
+  padding-left: 1.6rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2rem;
+  bottom: 0.3rem;
+  width: 1px;
+  background: var(--global-border-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 0 0 1.2rem;
+  padding-left: 0.8rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.55rem;
+  top: 0.22rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #7a7a6a;
+}
+
+.timeline-year {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b6b5f;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.timeline-content h4 {
+  margin: 0 0 0.25rem;
+  font-size: 1.02rem;
+}
+
+.timeline-content p {
+  margin: 0 0 0.2rem;
+  color: #5d5d53;
+  font-size: 0.95rem;
+}
+
+.experience-date {
+  flex-shrink: 0;
+  width: 130px;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  font-size: 0.9em;
+  padding-top: 0.15em;
+}
+
+.experience-content {
+  flex: 1;
+
+  h4 {
+    margin: 0 0 0.2em 0;
+    font-size: 1.05em;
+  }
+
+  p {
+    margin: 0 0 0.2em 0;
+    color: var(--global-text-color-light);
+    font-size: 0.9em;
+  }
+}
+
+/* 홈페이지 자동 생성 제목(title) 숨기기 - 탭에만 표시 */
+.page__title {
+  display: none;
+}
+
+/* Nicer section headings */
+.page__content h2 {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+/* Bold highlight in news */
+.news-content strong {
+  color: var(--global-text-color); /* 검은색(본문 색상)으로 유지 */
+  font-weight: 700;
+}
+
+/* Soft color tuning (light yellow page + light pink sidebar) */
+:root {
+  --global-bg-color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    height: auto;
+    margin-top: 0;
+  }
+}
+
+/* ===== Publication cards (flexbox) ===== */
+.publication-card {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0 !important;
+  border: 1px solid #d7d7d2;
+  border-radius: 9px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+  align-items: stretch;
+}
+
+/* 왼쪽: 썸네일 */
+.publication-card .archive__item-teaser {
+  flex: 0 0 200px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.publication-card .archive__item-teaser img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid #d4d4cf;
+  background: #fff;
+}
+
+/* 오른쪽: 텍스트 묶음 */
+.publication-card .pub-text {
+  flex: 1;
+  margin-left: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 제목 */
+.publication-card .pub-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.22;
+  color: #2e2f2f;
+  margin: 0 0 2px 0;
+}
+
+/* 뱃지 (venue, status) */
+.publication-card .pub-meta {
+  margin: 0 0 2px 0;
+  line-height: 1;
+}
+
+.pub-badge {
+  display: inline-block;
+  margin-right: 3px;
+  padding: 1px 5px;
+  border: 1px solid #d2d2cc;
+  border-radius: 4px;
+  background: #f2f2ed;
+  color: #5b5a55;
+  font-size: 0.66rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.pub-badge--sub {
+  background: #fbf3eb;
+  border-color: #e8cdae;
+  color: #a47547;
+}
+
+/* 저자 */
+.publication-card .pub-authors {
+  font-size: 0.76rem;
+  line-height: 1.25;
+  color: #585852;
+  margin: 0 0 2px 0;
+}
+
+.publication-card .pub-authors strong {
+  color: #2f2f2b;
+  font-weight: 700;
+}
+
+/* 링크 버튼 */
+.publication-card .pub-links {
+  margin: 0;
+}
+
+.publication-card .pub-links a,
+.pub-soon {
+  display: inline-block;
+  margin-right: 6px;
+  color: #5f5e56;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-card .pub-links a:hover {
+  color: #3f3e39;
+  text-decoration: none;
+}
+
+.pub-soon {
+  opacity: 0.8;
+}
+
+/* hover 효과 제거 */
+.archive__item.publication-card:hover .archive__item-teaser {
+  box-shadow: none;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .publication-card {
+    flex-direction: column !important;
+  }
+
+  .publication-card .archive__item-teaser {
+    flex: none;
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+
+  .publication-card .pub-text {
+    margin-left: 0;
+  }
+}
