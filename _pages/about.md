@@ -17,15 +17,15 @@ Hello! 🤗 I'm a M.S. student at [MICV Lab](https://micv.yonsei.ac.kr/home) (Pr
 <ul class="news-list">
   <li class="news-item">
     <span class="news-date">Feb 2026</span>
-    <span class="news-content">Our Paper <strong>💫ViKey💫</strong> accepted to <strong>CVPR 2026</strong>!</span>
+    <span class="news-content">Our Paper <strong>💫ViKey💫</strong> has been accepted to <strong>CVPR 2026</strong>!</span>
   </li>
   <li class="news-item">
     <span class="news-date">May 2025</span>
-    <span class="news-content">Our Paper <strong>💫PRETI💫</strong> accepted to <strong>MICCAI 2025</strong>!</span>
+    <span class="news-content">Our Paper <strong>💫PRETI💫</strong> has been accepted to <strong>MICCAI 2025</strong>!</span>
   </li>
   <li class="news-item">
     <span class="news-date">Feb 2025</span>
-    <span class="news-content">One Paper accepted to <strong>CVPR 2025</strong>!</span>
+    <span class="news-content">One Paper has been accepted to <strong>CVPR 2025</strong>!</span>
   </li>
 </ul>
 
